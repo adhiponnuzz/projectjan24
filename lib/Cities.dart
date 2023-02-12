@@ -19,15 +19,17 @@ class CitiesDemo extends StatelessWidget {
         itemCount: city.length,
           itemBuilder: (BuildContext,index) {
             return Card(
-              color: Colors.pinkAccent,
+              color: Colors.white,
               child: ListTile(
                 isThreeLine: true,
                 leading: SizedBox(
-                  height: 200,
-                  width: 100,
-                  child: Image(image: NetworkImage(images[index]),
-                  ),
-                ),
+                      width: 100,
+                      height: 100,
+                      child: Image(image: NetworkImage(images[index]),fit: BoxFit.fill,
+                      ),
+                    ),
+
+
                 title: Text(city[index],textAlign: TextAlign.center,),
                 subtitle: Text("${datas[index]}\n ${popdata[index]}",textAlign: TextAlign.center,),
               ),

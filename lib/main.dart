@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:projectjan24/phonelist.dart';
+import 'package:projectjan24/productlistwithcustom.dart';
 
 import 'Cities.dart';
 import 'login.dart';
@@ -23,7 +24,7 @@ class _MainScreenState extends State<MainScreen> {
   @override
   void initState() {
     Timer(const Duration(seconds: 5), () {
-      Navigator.push(context, MaterialPageRoute(builder: (context)=>CitiesDemo()));
+      Navigator.push(context, MaterialPageRoute(builder: (context)=>productcustom()));
     });
   }
 
